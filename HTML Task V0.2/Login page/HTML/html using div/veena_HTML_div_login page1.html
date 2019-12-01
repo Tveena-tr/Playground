@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background: #F6F8F9;
+
+        }        
+            
+    
+        #container {    
+            margin: 3%;
+            background: #FFFFFF;
+            opacity: 100%;
+            box-shadow: 0px 0px 10px 0px #00000029;
+            border-radius: 2%;
+            padding: 2%;
+
+        }
+
+        #center {
+            
+            margin: auto;
+            width: 40%;
+            position: relative;
+            padding: 2%;
+        }
+        .line{
+            border-bottom: 2px solid black;
+            padding-bottom: 2%;
+            
+        }
+
+        .email {
+            padding-top: 10%;
+
+        }
+        .box{
+            padding-top: 2%;
+             
+        }
+
+        .password {            
+            padding-top: 10%;
+            
+        }
+
+        .button {            
+            padding-top: 15%;
+            border-radius: 2%;
+            
+            padding-bottom: 15%;
+
+
+        }
+
+        .psw {
+            
+            padding-bottom: 1%;
+            float: right;
+            margin-right: 100px;
+            border-bottom: 2px solid black;
+            
+            
+            
+        }
+
+        .loginbtn {
+            border-radius: 20%;
+            color: #FFFFFF;
+            width: 35%;
+            height: 50px;
+            font-size: 90%;
+            background: #32BDD2;
+            
+        }
+        .rem{
+            padding-top: 5%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="center">
+          <span class="line"><b>LOGIN</b></span> 
+            <div class="email">
+                <label>Email or Username</label>
+               <div class="box"> <input type="text" name="Email" size="45" style="border-radius:5%;height:30px"></div></div>
+            <div class="password">
+                <label>Password</label>
+                <div class="box"><input type="text" name="password" placeholder="*******"  size="45" style="border-radius:5%;height: 30px"></div></div>
+
+            <div class="rem"> 
+                <label> <input type="checkbox" name="remember">Remember me </label>
+                <p class="psw"><span>Forgot Password</span></p>
+            </div>
+            <div class="button">
+                <button type="submit" class="loginbtn">LOGIN</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
