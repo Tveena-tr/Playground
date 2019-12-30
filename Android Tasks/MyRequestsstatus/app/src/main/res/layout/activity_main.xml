@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2">
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/image"
+                    android:contentDescription="TODO" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="My Requests"
+                    android:textColor="#505050"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="-30dp"
+                    android:background="@drawable/button"
+                    android:text="NEW REQUEST"
+                    android:textColor="#FFF"
+                    android:textSize="10dp"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/search"
+                    android:ems="8"
+                    android:inputType="text"
+                    android:text="Search"
+                    android:textSize="10dp"
+                    android:textColor="#747474"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="-23dp"
+                    android:layout_marginLeft="300dp"
+                    android:background="@drawable/image2"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/line">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/image3"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="-50dp"
+                    android:text="FILTER"
+                    android:textColor="#5A5A5A"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:text="You have not applied any filter."
+                    android:textColor="#505050"
+                    android:textSize="8dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:text="PUR - 2019 - 056"
+                    android:textColor="#595959"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:text="Submitted on"
+                    android:textSize="10dp"
+                    android:textColor="#909090"
+                    android:layout_marginTop="15dp"
+                    />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:text="06 Jul 2019"
+                    android:textColor="#595959"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="-10dp"/>
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="60dp"
+                    android:textColor="#FFC60A"
+                    android:textSize="55dp"
+                    android:text="•"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="-30dp"
+                    android:text="AWAITING APPROVAL"
+                    android:textColor="#5A5A5A"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/image4"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="-130dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:text="PUR - 2019 - 056"
+                    android:textColor="#595959"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:text="Submitted on"
+                    android:textSize="10dp"
+                    android:textColor="#909090"
+                    android:layout_marginTop="15dp"
+                    />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:text="06 Jul 2019"
+                    android:textStyle="bold"
+                    android:textColor="#595959"
+                    android:textSize="12dp"
+                    android:layout_marginTop="-10dp"/>
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="60dp"
+                    android:textColor="#24D081"
+                    android:textSize="55dp"
+                    android:text="•"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="-30dp"
+                    android:text="APPROVED"
+                    android:textColor="#5A5A5A"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/image4"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="-130dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:text="PUR - 2019 - 056"
+                    android:textColor="#595959"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:text="Submitted on"
+                    android:textSize="10dp"
+                    android:textColor="#909090"
+                    android:layout_marginTop="15dp"
+                    />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:text="06 Jul 2019"
+                    android:textColor="#595959"
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:layout_marginTop="-10dp"/>
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="60dp"
+                    android:textColor="#D0C824"
+                    android:textSize="55dp"
+                    android:text="•"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="-30dp"
+                    android:text="DRAFT"
+                    android:textColor="#5A5A5A"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/image4"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="-130dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:text="PUR - 2019 - 056"
+                    android:textColor="#595959"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:text="Submitted on"
+                    android:textSize="10dp"
+                    android:textColor="#909090"
+                    android:layout_marginTop="15dp"
+                    />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:text="06 Jul 2019"
+                    android:textColor="#595959"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="-10dp"/>
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="60dp"
+                    android:textColor="#D03E24"
+                    android:textSize="55dp"
+                    android:text="•"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="-30dp"
+                    android:text="REJECTED"
+                    android:textColor="#5A5A5A"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/image4"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="-130dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/line">
+                <TextView
+                    android:layout_width="360dp"
+                    android:layout_height="50dp"
+                    android:text="SHOW MORE"
+                    android:textSize="12dp"
+                    android:textColor="#909090"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/image5"
+                    android:layout_marginTop="-58dp"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
