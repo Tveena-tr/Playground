@@ -62,8 +62,8 @@
 
         <ImageView
             android:src="@drawable/image"
-            android:layout_width="50px"
-            android:layout_height="55px"
+            android:layout_width="30px"
+            android:layout_height="35px"
 
             android:layout_marginTop="215dp"
             android:layout_marginLeft="50dp"
@@ -76,6 +76,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="215dp"
             android:textColor="#BF574A"
+            android:textSize="8dp"
 
             />
 
@@ -111,9 +112,8 @@
 
         <ImageView
             android:src="@drawable/image"
-            android:layout_width="50px"
-            android:layout_height="55px"
-
+            android:layout_width="30px"
+            android:layout_height="35px"
             android:layout_marginTop="315dp"
             android:layout_marginLeft="50dp"
             />
@@ -125,6 +125,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="315dp"
             android:textColor="#BF574A"
+            android:textSize="8dp"
+
 
             />
 
@@ -151,7 +153,7 @@
         <Button
             android:id="@+id/button_id"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:text="LOGIN"
             android:textSize="12dp"
 
