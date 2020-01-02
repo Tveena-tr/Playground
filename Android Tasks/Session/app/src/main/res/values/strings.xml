@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">button</string>
+    <string name="ok_button">OK Button</string>
+    <string name="disable_ok_button">Disable OK Button</string>
+</resources>
