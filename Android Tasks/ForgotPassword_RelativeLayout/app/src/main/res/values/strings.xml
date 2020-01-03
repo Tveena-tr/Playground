@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ForgotPassword_RelativeLayout</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="text">The link to reset your password will be sent to your registered email.</string>
+    <string name="text2">This is not a valid email</string>
+    <string name="email">Email</string>
+    <string name="text3">This email is not registered with us.</string>
+    <string name="button">CONTINUE</string>
+    <string name="todo">TODO</string>
+</resources>

@@ -44,6 +44,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
        <ImageView
            android:src="@drawable/image"
            android:layout_width="30px"
@@ -83,13 +84,18 @@
            android:textStyle="bold"
            android:textSize="10dp"
            />
+
+
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
             android:src="@drawable/eye1"
-            android:layout_marginTop="265dp"
-            android:layout_marginStart="300dp"
-            android:layout_marginLeft="300dp"
+            android:layout_marginTop="260dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginLeft="280dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/border"
+
             />
    </RelativeLayout>
     <RelativeLayout
