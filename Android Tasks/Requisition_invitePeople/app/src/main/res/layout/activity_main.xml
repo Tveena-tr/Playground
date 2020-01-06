@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -341,11 +339,11 @@
                 android:text="@string/Save"
                 android:textStyle="bold"
                 android:textColor="@color/colorSave"
-                android:layout_marginTop="600dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginStart="30dp"
                 android:layout_marginLeft="30dp"
-                android:paddingBottom="30dp"
+                android:paddingBottom="15dp"
+                android:layout_alignParentBottom="true"
                 android:background="@drawable/borderbutton"/>
             <Button
                 android:id="@+id/button_id"
@@ -353,8 +351,8 @@
                 android:layout_width="wrap_content"
                 android:text="NEXT -->"
                 android:textSize="12dp"
-                android:layout_marginTop="600dp"
                 android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
                 android:paddingBottom="1dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/button"
@@ -362,6 +360,6 @@
                 />
         </RelativeLayout>
     </RelativeLayout>
-    </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

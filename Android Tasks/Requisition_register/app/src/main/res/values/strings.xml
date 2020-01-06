@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Requisition_register</string>
+    <string name="Requisition">REQUISITION</string>
+    <string name="ACKNOWLEDGEMENT">ACKNOWLEDGEMENT</string>
+    <string name="your">Your request has been registered.</string>
+    <string name="Lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis, tortor sit amet tempor vehicula, tortor ipsum faucibus nunc, id aliquam lacus odio nec magna. Cras a ipsum placerat, efficitur nibh sed, iaculis elit. Mauris semper tempor facilisis.</string>
+
+</resources>
