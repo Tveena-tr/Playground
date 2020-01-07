@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Addpeople_search</string>
+    <string name="addpeople">Add People</string>
+    <string name="NoResultsFound">No Results Found</string>
+    <string name="search">We can’t find any item matching your search</string>
+    <string name="Cancel">CANCEL</string>
+    <string name="done">DONE</string>
+    <string name="Noneselected">None selected</string>
+</resources>
