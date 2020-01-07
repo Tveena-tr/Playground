@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AddPeople</string>
+    <string name="addpeople">Add People</string>
+    <string name="Search">Search</string>
+    <string name="LukeRay">Luke Ray</string>
+    <string name="Lorem">Lorem ipsum doler sit amet.</string>
+    <string name="DaisyLake">Daisy Lake</string>
+    <string name="MarkSmith">Mark Smith</string>
+    <string name="cancel">CANCEL</string>
+    <string name="noneselect">None selected</string>
+    <string name="done">DONE</string>
+</resources>
