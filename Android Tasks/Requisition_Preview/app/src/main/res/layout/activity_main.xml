@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -473,18 +471,247 @@
                     android:textSize="10sp"
                     android:textColor="@color/colorsentence"/>
             </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_marginTop="290dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/doc"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorSave"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/KB"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="120dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorSave"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_marginTop="320dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shorttext"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorsentence"/>
+            </RelativeLayout>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/INVITEES"
                 android:textColor="@color/colorBlack"
                 android:textSize="12dp"
-                android:layout_marginTop="300dp"/>
-            
+                android:layout_marginTop="390dp"/>
+            <RelativeLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/member"
+                android:layout_marginTop="440dp">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/avatar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:paddingTop="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/LukeRay"
+                    android:textColor="@color/coloratt"
+                    android:textSize="12dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginLeft="70dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Lorm"
+                    android:textSize="10dp"
+                    android:textColor="@color/coloratt"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:paddingTop="20dp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/member"
+                android:layout_marginTop="520dp">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/avatar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:paddingTop="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DaisyLake"
+                    android:textColor="@color/coloratt"
+                    android:textSize="12dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginLeft="70dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Lorm"
+                    android:textSize="10dp"
+                    android:textColor="@color/coloratt"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:paddingTop="20dp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/member"
+                android:layout_marginTop="600dp">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/avatar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:paddingTop="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/MarkSmith"
+                    android:textColor="@color/coloratt"
+                    android:textSize="12dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginLeft="70dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Lorm"
+                    android:textSize="10dp"
+                    android:textColor="@color/coloratt"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:paddingTop="20dp"
+                    />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/APPROVAL"
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp"
+                android:layout_marginTop="700dp"/>
+            <RelativeLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/member"
+                android:layout_marginTop="740dp">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/avatar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:paddingTop="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/JohnCampbell"
+                    android:textColor="@color/coloratt"
+                    android:textSize="12dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginLeft="70dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Lorm"
+                    android:textSize="10dp"
+                    android:textColor="@color/coloratt"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:paddingTop="20dp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/member"
+                android:layout_marginTop="820dp">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/avatar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:paddingTop="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/KateGill"
+                    android:textColor="@color/coloratt"
+                    android:textSize="12dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginLeft="70dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Lorm"
+                    android:textSize="10dp"
+                    android:textColor="@color/coloratt"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:paddingTop="20dp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="950dp"
+               >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SAVEDRAFT"
+                    android:textSize="10dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingBottom="20dp"
+                    android:textColor="@color/colorSave"
+                    android:textStyle="bold"
+                    android:background="@drawable/borderbottom"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:text="@string/SUBMIT"
+                    android:textColor="#FFF"
+                    android:textSize="10sp"
+                    android:background="@drawable/button"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    />
+            </RelativeLayout>
         </RelativeLayout>
+
 
 
     </RelativeLayout>
     </ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>

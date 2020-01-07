@@ -27,4 +27,13 @@
     <string name="KB">976 KB</string>
     <string name="shorttext">Lorem ipsum dolor sit amet, consectetur…</string>
     <string name="INVITEES">INVITEES</string>
+    <string name="LukeRay">Luke Ray</string>
+    <string name="Lorm">Lorem ipsum doler sit amet.</string>
+    <string name="DaisyLake">Daisy Lake</string>
+    <string name="MarkSmith">Mark Smith</string>
+    <string name="JohnCampbell">John Campbell</string>
+    <string name="KateGill">Kate Gill</string>
+    <string name="APPROVAL">APPROVAL(S)</string>
+    <string name="SAVEDRAFT">SAVE DRAFT</string>
+    <string name="SUBMIT">SUBMIT</string>
 </resources>

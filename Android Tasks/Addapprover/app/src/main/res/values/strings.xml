@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Addapprover</string>
+    <string name="addpeople">Add People</string>
+    <string name="Search">Search</string>
+    <string name="LukeRay">Luke Ray</string>
+    <string name="Lorem">Lorem ipsum doler sit amet.</string>
+    <string name="found">01 result found</string>
+    <string name="cancel">CANCEL</string>
+    <string name="noneselect">None selected</string>
+    <string name="done">DONE</string>
+</resources>
