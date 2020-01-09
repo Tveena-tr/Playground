@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Recycleview</string>
+    <string name="todo1">TODO</string>
+    <string name="marksmith">Mark Smith</string>
+    <string name="lorem">Lorem ipsum doler sit amet.</string>
+    <string name="todo2">TODO</string>
+</resources>
