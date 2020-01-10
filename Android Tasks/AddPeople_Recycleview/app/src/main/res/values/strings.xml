@@ -2,4 +2,9 @@
     <string name="app_name">AddPeople_Recycleview</string>
     <string name="AddPeople">Add People</string>
     <string name="search">Search</string>
+    <string name="marksmith">Mark Smith</string>
+    <string name="lorem">Lorem ipsum doler sit amet.</string>
+    <string name="cancel">CANCEL</string>
+    <string name="noneselect">None selected</string>
+    <string name="done">DONE</string>
 </resources>

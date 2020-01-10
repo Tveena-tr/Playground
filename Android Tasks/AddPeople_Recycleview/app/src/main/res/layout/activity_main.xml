@@ -16,7 +16,8 @@
             android:src="@drawable/image"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
-            android:padding="5dp"/>
+            android:padding="5dp"
+            android:contentDescription="TODO" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +30,7 @@
             android:layout_marginLeft="25dp"
             android:text="@string/AddPeople"
             android:textColor="@color/coloradd"
-            android:textSize="12dp"/>
+            android:textSize="12sp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -38,30 +39,88 @@
         android:orientation="vertical">
         <EditText
             android:layout_width="350dp"
-            android:layout_height="35dp"
+            android:layout_height="30dp"
             android:background="@drawable/searchbar"
             android:text="@string/search"
-            android:textSize="8dp"
+            android:textSize="8sp"
             android:textColor="@color/colorsearch"
             android:paddingLeft="15dp"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="25dp"/>
+            android:layout_marginLeft="25dp"
+             />
         <ImageView
             android:layout_width="30dp"
-            android:layout_height="25dp"
+            android:layout_height="22dp"
             android:src="@drawable/image2"
-            android:layout_marginTop="-30dp"
+            android:layout_marginTop="-28dp"
             android:layout_marginStart="330dp"
             android:layout_marginLeft="330dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:background="@drawable/line"
+            android:layout_marginTop="140dp"/>
     </LinearLayout>
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="160dp"
 
         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="570dp">
+        <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textColor="@color/colordone"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:background="@drawable/borderbottom"
+        android:paddingBottom="15dp"
+
+        android:layout_marginLeft="25dp"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:background="@drawable/selectbar"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/noneselect"
+            android:layout_marginRight="15dp"
+            android:textSize="9sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="570dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="300dp"
+        >
+        <Button
+            android:id="@+id/button"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:background="@drawable/button"
+            android:text="@string/done"
+            android:textColor="@color/colorWhite"
+           />
+
+
+    </LinearLayout>
 
 
 
