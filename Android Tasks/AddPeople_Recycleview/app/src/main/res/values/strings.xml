@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AddPeople_Recycleview</string>
+    <string name="AddPeople">Add People</string>
+    <string name="search">Search</string>
+</resources>

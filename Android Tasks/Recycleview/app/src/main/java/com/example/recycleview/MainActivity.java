@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         items = new ArrayList<>();
-        items.add("First Cardview item");
-        items.add("Second Cardview item");
-        items.add("Third Cardview item");
-        items.add("Fourth Cardview item");
-        items.add("Fifth Cardview item");
+        items.add("John Campbell");
+        items.add("Kate Gill");
+        items.add("Kate Gill");
+        items.add("Kate Gill");
+
 
 
         recyclerView = findViewById(R.id.RecyclerView);
