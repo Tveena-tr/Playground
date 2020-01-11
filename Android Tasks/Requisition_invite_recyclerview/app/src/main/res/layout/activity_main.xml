@@ -223,6 +223,7 @@
             android:layout_height="wrap_content"
             >
             <TextView
+                android:id="@+id/savedraft"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Save"
@@ -235,7 +236,7 @@
                 android:layout_marginTop="550dp"
                 android:background="@drawable/borderbutton"/>
             <Button
-                android:id="@+id/button_id"
+                android:id="@+id/button"
                 android:layout_height="30dp"
                 android:layout_width="wrap_content"
                 android:text="NEXT -->"
