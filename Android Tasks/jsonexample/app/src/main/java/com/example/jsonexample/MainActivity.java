@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 adapter.setData(articals);
                 adapter.notifyDataSetChanged();
                 progressDialog.dismiss();
+            }
 
         }, new Response.ErrorListener() {
             @Override
@@ -82,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
         });
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(jsonArrayRequest);
-
 
 
     }
