@@ -1,44 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-
-       <ImageButton
-           android:layout_width="wrap_content"
-           android:layout_height="140dp"
-           android:src="@drawable/img_avatar"
-           android:background="@drawable/state"
-           android:clickable="true"
-           />
-
-        <Button
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img_avatar" />
+    <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="OK"
             android:background="@drawable/state"
-            android:layout_marginTop="350dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginLeft="60dp"/>
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="50dp"
 
+          />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:width="200dp"
-            android:height="300dp"
-
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="OK"
+            android:background="@drawable/state"
+            android:layout_marginTop="500dp"
+            android:layout_marginLeft="150dp"
 
             />
 
-        <ImageView
-            android:layout_width="46dp"
-            android:layout_height="227dp"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/img_avatar" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="600dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="400dp"
+                android:src="@drawable/img2" />
+
+
+    </RelativeLayout>
 
 
 
-</LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
