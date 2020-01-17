@@ -14,7 +14,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginLeft="25dp"
         android:layout_marginBottom="13dp"
-        android:background="@drawable/member"
+        android:background="@drawable/members"
         >
         <RelativeLayout
             android:layout_width="350dp"
@@ -23,21 +23,20 @@
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:layout_alignParentStart="true"
-            android:background="@drawable/member">
+            android:background="@drawable/members">
             <ImageView
-                android:id="@+id/img1"
                 android:layout_width="35dp"
                 android:layout_height="45dp"
-                android:src="@drawable/avatar"
+                android:src="@drawable/image2"
                 android:layout_marginLeft="15dp"
                 android:layout_marginStart="15dp"
-                android:contentDescription="@string/todo1" />
+                />
             <TextView
                 android:id="@+id/textViewTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/marksmith"
-                android:textColor="@color/colorsentence"
+                android:textColor="@color/colorbrown"
                 android:layout_marginStart="65dp"
                 android:layout_marginLeft="65dp"/>
             <TextView
@@ -45,12 +44,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lorem"
-                android:textColor="@color/colorLorem"
+                android:textColor="@color/colorsearch"
                 android:layout_marginStart="65dp"
                 android:layout_marginLeft="65dp"
                 android:paddingTop="20dp"/>
             <ImageView
-                android:id="@+id/img2"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:src="@drawable/plus"
