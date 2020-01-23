@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colortoggle</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="buttonStyle">@style/Widget.MaterialComponents.Button</item>
+        <item name="checkboxStyle">@style/Widget.MaterialComponents.CompoundButton.CheckBox</item>
+        <item name="switchStyle">@style/Widget.MaterialComponents.CompoundButton.Switch</item>
+        <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Entry</item>
+        <item name="floatingActionButtonStyle">style="@style/Widget.MaterialComponents.FloatingActionButton"</item>
+        <item name="radioButtonStyle">@style/Widget.MaterialComponents.CompoundButton.RadioButton</item>
+
+
+
+    </style>
+
+
+
+</resources>

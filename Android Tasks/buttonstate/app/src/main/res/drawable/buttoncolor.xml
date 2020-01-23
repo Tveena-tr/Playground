@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/colorBlack" android:state_checked="true">@style/Widget.MaterialComponents.CompoundButton.CheckBox</item>
+    <item android:color="@color/colortoggle" android:state_pressed="true">@style/Widget.MaterialComponents.CompoundButton.Switch</item>
+    <item android:color="@color/colortoggle" >@style/Widget.MaterialComponents.Button</item>
+    <item android:color="@color/colorradio" android:state_enabled="true">@style/Widget.MaterialComponents.CompoundButton.RadioButton</item>
+    <item android:color="@color/colortext">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+</selector>
