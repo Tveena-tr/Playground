@@ -183,6 +183,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="85dp"
                 android:layout_marginTop="20dp"
+                app:boxStrokeColor="@color/colortext"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -221,6 +222,8 @@
                 android:layout_marginTop="20dp"
                 android:buttonTint="@color/colorradio"
                 android:text="SELF"
+                android:textColor="#747474"
+                android:textSize="12dp"
                 android:paddingLeft="20dp"/>
             <RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -231,6 +234,8 @@
                 android:layout_marginLeft="30dp"
                 android:buttonTint="@color/colorradio"
                 android:text="TEAM / DEPARTMENT / BRANCH"
+                android:textColor="#747474"
+                android:textSize="12dp"
                 android:paddingLeft="20dp"/>
 
             <RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
@@ -240,7 +245,8 @@
                 app:useMaterialThemeColors="false"
                 android:layout_marginStart="30dp"
                 android:layout_marginLeft="30dp"
-
+                android:textColor="#747474"
+                android:textSize="12dp"
                 android:buttonTint="@color/colorradio"
                 android:text="SOMEONE ELSE"
                 android:paddingLeft="20dp"/>

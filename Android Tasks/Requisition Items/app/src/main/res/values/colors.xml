@@ -7,4 +7,6 @@
     <color name="colorShade">#FDFDFD</color>
     <color name="colorItem">#F0F0F0</color>
     <color name="colorBack">#FFFFFF</color>
+    <color name="colorBlue">#32BDD2</color>
+    <color name="colorWhite">#FFFFFF</color>
 </resources>

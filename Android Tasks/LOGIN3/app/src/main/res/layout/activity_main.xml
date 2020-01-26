@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_view_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Login"
+            android:textSize="14dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="80dp"
+            android:textStyle="bold"
+            android:textColorHint="#747474"
+            android:padding="15dp"
+            />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+       >
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconCheckable="true"
+            android:hint="Email or Phone Number"
+            app:hintEnabled="true"
+            android:textColorHint="#747474"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="60dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor ="@color/colortext"
+            android:layout_marginTop="20dp"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            app:srcCompat="@drawable/image"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This field is required"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:textColor="#BF574A"
+            android:textSize="8sp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/psw"
+            app:passwordToggleEnabled="true"
+            app:endIconCheckable="true"
+            android:textColorHint="#747474"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="60dp"
+            app:boxStrokeColor="@color/colortext">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            app:srcCompat="@drawable/image"
+            android:textColor="#BF574A"
+            android:textSize="8sp"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This field is required"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="#BF574A"
+            android:textSize="8sp"
+            android:layout_marginTop="8dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_view_id6"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Forgot password?"
+            android:layout_marginLeft="225dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="LOGIN"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        style="@style/Widget.MaterialComponents.Button"
+        android:backgroundTint="@color/colorbutton"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="@color/colorbutton"
+        app:cornerRadius="25dp"
+
+
+        />
+</LinearLayout>
+    </LinearLayout>
+
+
+
+

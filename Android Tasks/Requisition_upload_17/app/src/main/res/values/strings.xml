@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Requisition_upload_17</string>
+    <string name="requisition">REQUISITION</string>
+    <string name="no1">1</string>
+    <string name="no2">2</string>
+    <string name="no3">3</string>
+    <string name="no4">4</string>
+    <string name="no5">5</string>
+    <string name="no6">6</string>
+    <string name="attibute">ATTACHMENTS</string>
+    <string name="sentence">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="attachfile">ATTACH FILES</string>
+    <string name="todo">TODO</string>
+    <string name="doc">abc0037429023.doc</string>
+    <string name="KB">976 KB</string>
+    <string name="shorttext">write the description…</string>
+    <string name="Save">SAVE DRAFT</string>
+    <string name="todo1">TODO</string>
+    <string name="upload">UPLOAD</string>
+    <string name="des">This field is required.</string>
+
+    </resources>
+
+

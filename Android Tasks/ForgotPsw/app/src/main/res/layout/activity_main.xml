@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_view_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Forgot password?"
+            android:textSize="12dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="100dp"
+            android:textStyle="bold"
+            android:textColor="#747474"
+            android:padding="15dp"
+            />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      >
+        <TextView
+            android:id="@+id/text_view_id2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="The link to reset your password will be sent to your registered email."
+            android:textSize="12dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="25dp"
+            android:textStyle="bold"
+            android:textColor="#747474"
+            android:padding="15dp"
+            android:layout_marginTop="-10dp"
+
+            />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconCheckable="true"
+        android:hint="Email"
+        android:textColorHint="#747474"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="60dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeColor ="@color/colortext"
+        android:layout_marginTop="20dp"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        app:srcCompat="@drawable/image"/>
+    <TextView
+        android:id="@+id/text_view_id5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is not a valid email"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#BF574A"
+        android:textSize="8sp"
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            app:srcCompat="@drawable/image"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This email is not registered with us"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp"
+            android:textColor="#BF574A"
+            android:textSize="8sp"
+
+            />
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="CONTINUE"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        style="@style/Widget.MaterialComponents.Button"
+        android:backgroundTint="@color/colorbutton"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="@color/colorbutton"
+        app:cornerRadius="25dp"
+
+
+        />
+</LinearLayout>
