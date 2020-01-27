@@ -34,7 +34,6 @@
             app:endIconCheckable="true"
             android:hint="Email or Phone Number"
             app:hintEnabled="true"
-            android:textColorHint="#747474"
             android:textStyle="bold"
             android:textSize="10sp"
             android:layout_marginLeft="50dp"
@@ -45,6 +44,9 @@
             app:boxCornerRadiusTopStart="8dp"
             app:boxStrokeColor ="@color/colortext"
             android:layout_marginTop="20dp"
+            app:hintTextColor="@color/colortext"
+            
+
 
             >
             <com.google.android.material.textfield.TextInputEditText
@@ -85,21 +87,24 @@
             android:hint="@string/psw"
             app:passwordToggleEnabled="true"
             app:endIconCheckable="true"
-            android:textColorHint="#747474"
             android:textStyle="bold"
-            android:textSize="10dp"
+            android:textSize="10sp"
             app:boxCornerRadiusTopEnd="8dp"
             app:boxCornerRadiusBottomStart="8dp"
             app:boxCornerRadiusBottomEnd="8dp"
             app:boxCornerRadiusTopStart="8dp"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="60dp"
-            app:boxStrokeColor="@color/colortext">
+            app:boxStrokeColor="@color/colortext"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/colortext"
+            >
 
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 
