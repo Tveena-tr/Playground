@@ -114,8 +114,10 @@
                     >
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="38dp"
-                        android:paddingTop="5dp"
+                        android:layout_height="35dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+
                         />
                 </com.google.android.material.textfield.TextInputLayout>
                 <TextView
@@ -140,11 +142,15 @@
                     app:boxCornerRadiusBottomEnd="5dp"
                     app:boxCornerRadiusTopStart="5dp"
                     app:boxStrokeColor="@color/colortext"
+
                     >
+
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="38dp"
-                        android:paddingTop="5dp"
+                        android:layout_height="35dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+
                         />
                 </com.google.android.material.textfield.TextInputLayout>
                 <androidx.appcompat.widget.AppCompatImageView
@@ -179,7 +185,9 @@
                     >
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="35dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
                         />
                 </com.google.android.material.textfield.TextInputLayout>
 

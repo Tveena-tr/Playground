@@ -16,6 +16,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     private LayoutInflater layoutInflater;
     private List<String> data;
+    private ViewHolder viewHolder;
+    private int i;
 
 
     Adapter(Context context, List<String> data){
@@ -34,6 +36,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
+
 
         String title = data.get(i);
 
@@ -57,7 +60,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             textTitle = itemView.findViewById(R.id.text);
-            textDescription = itemView.findViewById(R.id.textdesc);
+
         }
     }
 }

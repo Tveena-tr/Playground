@@ -9,4 +9,7 @@
     <color name="colorBlue">#32BDD2</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="radioyellow">#FFC60A</color>
+    <color name="close">#707070</color>
+    <color name="colorred">#CB1720</color>
+    <color name="colorupload">#FFFFFF</color>
 </resources>
