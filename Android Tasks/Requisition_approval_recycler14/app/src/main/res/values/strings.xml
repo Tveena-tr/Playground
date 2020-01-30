@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Requisition_approval_recycler14</string>
+    <string name="approval">APPROVAL(S)</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="addapproval">ADD APPROVER</string>
+    <string name="save">SAVE DRAFT</string>
+    <string name="next">NEXT--></string>
+</resources>
