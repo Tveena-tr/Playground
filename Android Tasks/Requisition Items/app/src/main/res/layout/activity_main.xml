@@ -303,6 +303,7 @@
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 app:backgroundTint="@color/colorBlue"
+                android:layout_marginLeft="0dp"
 
                 />
 

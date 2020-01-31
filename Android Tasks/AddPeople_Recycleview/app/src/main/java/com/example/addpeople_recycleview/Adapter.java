@@ -1,6 +1,7 @@
 package com.example.addpeople_recycleview;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,6 +56,16 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         TextView textTitle,textDescription;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent i = new Intent(v.getContext(),profile.class);
+                    i.putExtra("title",data.get(getAdapterPosition()));
+                    v.getContext().startActivity(i);
+                }
+            });
             textTitle = itemView.findViewById(R.id.textViewTitle);
             textDescription = itemView.findViewById(R.id.textViewdescription);
         }
