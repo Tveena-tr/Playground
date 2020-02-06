@@ -18,9 +18,11 @@ import Model.ListItem;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     private Context context;
-    private List<ListItem>listItems;
+    private List<ListItem> listItems;
 
     public MyAdapter(Context context, List listItem) {
+        this.context=context;
+        this.listItems=listItem;
     }
 
     @NonNull
@@ -37,9 +39,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
         holder.title.setText(item.getTitle());
         holder.descripition.setText(item.getDescription());
-
-
-
     }
 
     @Override
