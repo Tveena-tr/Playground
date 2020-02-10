@@ -1,4 +1,4 @@
-package com.example.jsondata;
+package com.example.api_movie;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -50,31 +50,31 @@ public class MainActivity extends AppCompatActivity implements ExampleAdapter.On
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET,url,null,
                 new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                try {
-                    JSONArray jsonArray = response.getJSONArray("hits");
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        try {
+                            JSONArray jsonArray = response.getJSONArray("hits");
 
-                    for (int i = 0; i < jsonArray.length(); i++) {
-                        JSONObject hit = jsonArray.getJSONObject(i);
+                            for (int i = 0; i < jsonArray.length(); i++) {
+                                JSONObject hit = jsonArray.getJSONObject(i);
 
-                        String creatorName = hit.getString("user");
-                        String imageUrl = hit.getString("webformatURL");
-                        int likeCount = hit.getInt("likes");
+                                String creatorName = hit.getString("user");
+                                String imageUrl = hit.getString("webformatURL");
+                                int likeCount = hit.getInt("likes");
 
-                        mExampleList.add(new ExampleItem(imageUrl, creatorName, likeCount));
+                                mExampleList.add(new ExampleItem(imageUrl, creatorName, likeCount));
+                            }
+
+                            mExampleAdapter = new ExampleAdapter(MainActivity.this, mExampleList);
+                            mRecyclerView.setAdapter(mExampleAdapter);
+                            mExampleAdapter.setOnItemClickListener(MainActivity.this);
+
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                     }
-
-                    mExampleAdapter = new ExampleAdapter(MainActivity.this, mExampleList);
-                    mRecyclerView.setAdapter(mExampleAdapter);
-                    mExampleAdapter.setOnItemClickListener(MainActivity.this);
-
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        }, new Response.ErrorListener() {
+                }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 error.printStackTrace();
