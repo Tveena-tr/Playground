@@ -10,44 +10,47 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
-    private Context mCtx;
+    Context context;
+    ArrayList<Product>product;
 
-    private List<Product> productList;
-
-    public ProductAdapter(Context mCtx, List<Product> productList) {
-        this.mCtx = mCtx;
-        this.productList = productList;
+    public ProductAdapter(Context context,ArrayList<Product>product){
+        this.product = product;
+        this.context = context;
     }
+
+
     @NonNull
     @Override
-    public ProductAdapter.ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ProductAdapter.ProductViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
 
-        LayoutInflater inflater = LayoutInflater.from(mCtx);
-        View view = inflater.inflate(R.layout.layout_products, null);
-        return new ProductViewHolder(view);
+
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.layout_products,null);
+        ProductViewHolder productViewHolder = new  ProductViewHolder(view);
+        return productViewHolder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ProductAdapter.ProductViewHolder holder, int position) {
-        Product product = productList.get(position);
+    public void onBindViewHolder(@NonNull ProductAdapter.ProductViewHolder holder, int i) {
 
-        holder.textViewTitle.setText(product.getTitle());
-        holder.textViewdescription.setText(product.getDesc());
-        holder.imageView1.setImageDrawable(mCtx.getResources().getDrawable(product.getImage1()));
-        holder.imageView2.setImageDrawable(mCtx.getResources().getDrawable(product.getImage2()));
+
+        holder.textViewTitle.setText(product.get(i).getTitle());
+        holder.textViewdescription.setText(product.get(i).getDesc());
+        holder.imageView1.setImageResource(product.get(i).getImage1());
+        holder.imageView2.setImageResource(product.get(i).getImage2());
 
     }
 
     @Override
     public int getItemCount() {
-        return productList.size();
+        return product.size();
     }
 
 
-    class ProductViewHolder extends RecyclerView.ViewHolder {
+    public class ProductViewHolder extends RecyclerView.ViewHolder {
 
         TextView textViewTitle, textViewdescription;
         ImageView imageView1,imageView2;

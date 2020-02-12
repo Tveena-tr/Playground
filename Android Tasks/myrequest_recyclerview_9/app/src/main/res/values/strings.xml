@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">myrequest_recyclerview_9</string>
+    <string name="myrequest">My Requests</string>
+    <string name="NEWREQUEST">NEW REQUEST</string>
+    <string name="filter">FILTER</string>
+    <string name="show">Showing approved requests.</string>
+    <string name="showmore">SHOW MORE</string>
+    <string name="search">Search</string>
+</resources>
