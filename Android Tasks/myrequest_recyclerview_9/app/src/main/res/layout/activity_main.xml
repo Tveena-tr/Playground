@@ -115,7 +115,8 @@
             android:id="@+id/RecyclerView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="289dp">
+            android:layout_marginTop="289dp"
+            android:layout_marginBottom="60dp">
 
 
 
@@ -128,6 +129,7 @@
         android:orientation="vertical"
         android:background="@drawable/line"
         android:layout_marginTop="548dp"
+        android:backgroundTint="#FFFFFF"
         >
         <TextView
             android:layout_width="wrap_content"
