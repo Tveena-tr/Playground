@@ -23,7 +23,7 @@
                     <div>
                         <div>
                             <div  style="width:100%;padding-top:2%"> <div><input type="text" name="Email"  size="45" style="border: 1px solid #D3D3D3;height:20px;border-radius:4px ;color:#D3D3D3"></div></div>
-                            <div><img src="../../images/request.png"width="17px" height="17px"><span style="font-size: 15px;color:#BF574A;">This field is required</span></div>
+                            <div  id="demo"><img src="../../images/request.png"width="17px" height="17px"><span style="font-size: 15px;color:#BF574A;">This field is required</span></div>
                         </div>
                     </div>
                     <div>
@@ -37,7 +37,7 @@
                                 <div>
                                     <div>
                                         <div  style="width:100%;padding-top:2%"><input type="text"  name="password"placeholder="*******"  size="45" style="height:20px;border: 1px solid #D3D3D3;border-radius:4px ;color:#D3D3D3"></div></div>
-                                        <div><img src="../../images/request.png"width="17px" height="17px"><span style="font-size: 15px;color:#BF574A;">This field is required</span></div>
+                                        <div id="demo"><img src="../../images/request.png"width="17px" height="17px"><span style="font-size: 15px;color:#BF574A;">This field is required</span></div>
                                 </div>
                             </div>
                             <div>
@@ -49,8 +49,16 @@
                                 </div> 
                                 <div>
                                     <div>
-                                        <div style="clear: both;padding-top: 5%;"><button name="submit" style="border:#32BDD2;color:#FFFFFF ;width:100px;height: 35px;border-radius:21px;background: #32BDD2">LOGIN</button></div>
+                                        <div style="clear: both;padding-top: 5%;"><button onclick="my()" name="submit" style="border:#32BDD2;color:#FFFFFF ;width:100px;height: 35px;border-radius:21px;background: #32BDD2">LOGIN</button></div>
                                     </div>
+                                    <script>
+                                        function my(){
+                                            document.getElementById("demo").innerHTML = "This field is requered";
+
+                                        }
+
+                                       
+                                    </script>
                                 </div></div>
             </div>
         </div>
