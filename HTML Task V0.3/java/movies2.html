@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-  
-<div id="parent">
-  
-   
-    
-  </div>
-  <button onclick = "myfunction()" style="margin-left: 20px;">NEXT</button>
-
-
+<div id="parent"></div>
 
 <script>
 var ajaxRequest = new XMLHttpRequest();
@@ -17,39 +9,31 @@ ajaxRequest.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
     var jsondata = JSON.parse(ajaxRequest.responseText);
     var info = jsondata.hits;
-
-   
     for(i=0;i<info.length;i++){
 
     var parent = document.getElementById('parent');
     var cont = document.createElement("div");
-    var app = document.createElement("div");
-    parent.appendChild(cont); 
-    cont.appendChild(app);
+    parent.appendChild(cont);
+    
 
-   
   
+
   var card=document.createElement("div");
   cont.appendChild(card);
-  cont.style="background:#FF4576;margin:2%;"; 
+  cont.style="background:#32BDD2;margin:2%";
+    
+  
 
 
   var image = document.createElement("img");
   cont.appendChild(image);
   image.src= info[i].webformatURL;
-  image.style="width:100px ;float:left;margin-Left:25px ;margin-bottom:5px;margin-top:5px;padding-bottom:2%;padding-top:2%";
+  image.style="width:100px ;float:left;margin-Left:25px ;margin-top:20px;padding-bottom:2%";
 
   var text = document.createElement("div");
-  cont.appendChild(app);
-  app.appendChild(text);
+  cont.appendChild(text);
   text.innerHTML = info[i].user;
-  text.style="font-size:20px ;padding-Left:11% ;margin-bottom:5px;padding-top:3% ";
-
-  var text = document.createElement("div");  
-  app.appendChild(text);
-  text.innerHTML = info[i].tags;
-  text.style = "font-size:20px ;padding-Left:11% ;margin-bottom:5px;";  
-
+  text.style="font-size:20px ;padding-Left:11% ;margin-bottom:5px;margin-top:2%;padding-bottom:2%;padding-top:2% ";
   
 
  var text = document.createElement("div");
@@ -65,10 +49,6 @@ ajaxRequest.onreadystatechange = function() {
     "GET","https://pixabay.com/api/?key=5303976-fd6581ad4ac165d1b75cc15b3&q=movie&image_type=photo&pretty=true",true
   );
   ajaxRequest.send();
-
-  function myfunction(){
-   window.location.replace("movies2.html")
-  }
 
 </script>
 </body>
