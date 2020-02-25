@@ -19,7 +19,7 @@ ajaxRequest.onreadystatechange = function(){
         var text = document.createElement("div");
         cont.appendChild(text);
         text.innerHTML = info[i].list;
-        text.style="padding-top:10px;padding-left:15px;font: Regular 12px/18px Roboto;letter-spacing: 0.78px;color: #747474;width:35%;float:left";
+        text.style="padding-top:10px;padding-left:15px;font: Regular 12px/18px Roboto;letter-spacing: 0.78px;color: #747474;width:40%;float:left";
 
 
         var text = document.createElement("div");
@@ -40,6 +40,7 @@ ajaxRequest.onreadystatechange = function(){
         var image = document.createElement("img");
         cont.appendChild(image);
         image.src = info[i].image;
+        
         image.style = "float:right;padding-right:20px; width:40px ;height:40px ;padding-top:30px";
 
         var text = document.createElement("div");
@@ -53,3 +54,5 @@ ajaxRequest.open(
     "GET","Requisition12_data.json",true
 );
 ajaxRequest.send();
+
+

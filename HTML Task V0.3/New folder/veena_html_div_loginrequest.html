@@ -8,6 +8,7 @@
         .demo{
             display:none;
         }
+      
     </style>
     <body style="margin: 0%;padding:0%;box-sizing: border-box;">
         <div style="padding:2%;background: #F6F8F9;">
@@ -21,19 +22,19 @@
                     </div>
                     <div>
                         <div>
-                            <div style="width:100%;padding-top:6%"><div style="color: #505050;font-size: 15px; font-family: roboto,regular;"><span>Email or Username</span></div>
+                            <div style="width:100%;padding-top:6%"><div id="email" style="color: #505050;font-size: 15px; font-family: roboto,regular;"><span>Email or Username</span></div>
                         </div>
                         </div>
                     </div>
                     <div>
                         <div>
                             <div  style="width:100%;padding-top:2%;"> <div><input type="text" name="Email"  size="45" style="border: 1px solid #D3D3D3;height:20px;border-radius:4px ;color:#000"></div></div>
-                            <div  class="demo" style="font-size: 15px;color:#BF574A;"><img onclick = "demo"  src="../../images/request.png"width="17px" height="15px" >This feild is required</div>
+                            <div  class="demo" style="font-size: 15px;color:#BF574A;"><img onclick = "demo"  src="images/request.png"width="17px" height="15px" >This feild is required</div>
                         </div>
                     </div>
                     <div>
                             <div>
-                                <div  style="width:100%;padding-top:5%"><div style="color: #505050;font-size: 15px;"><span>Password</span></div>
+                                <div  style="width:100%;padding-top:5%"><div id="password" style="color: #505050;font-size: 15px;"><span>Password</span></div>
             
                             </div>
                             </div>
@@ -42,7 +43,7 @@
                                 <div>
                                     <div>
                                         <div  style="width:100%;padding-top:2%"><input type="text"  name="password"placeholder="*******"  size="45" style="height:20px;border: 1px solid #D3D3D3;border-radius:4px ;color:#000"></div></div>
-                                        <div  class="demo" style="font-size: 15px;color:#BF574A;"><img onclick = "demo"  src="../../images/request.png"width="17px" height="15px" >This feild is required</div>
+                                        <div  class="demo" style="font-size: 15px;color:#BF574A;"><img   src="images/request.png"width="17px" height="15px" >This feild is required</div>
                                 </div>
                             </div>
                             <div>
@@ -61,6 +62,8 @@
                                             var button= document.getElementById("btn");
                                             var hide = document.getElementsByClassName("demo");
 
+                                            
+
                                             for(var i=0;i!=hide.length;i++){
                                                
                                                 if(button.click){
@@ -72,16 +75,18 @@
                                             }
 
                                         }
+                                    
                                         function forgot()
                                         {
-                                            window.location.replace("F:\GIT-FILES\Playground\HTML Task V0.3\Forgot Password\HTML\HTML using div\veena_HTML_div_forgotPassword.html");
+                                            window.location.replace("veena_HTML_div_Passworderror.html");
                                         }
                                        
                             
                                        
                                     </script>
                                      
-                                </div></div>
+                                </div>
+                            </div>
             </div>
         </div>
     </div>
