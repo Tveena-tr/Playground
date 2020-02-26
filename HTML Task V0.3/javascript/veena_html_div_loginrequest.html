@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LOGIN Request</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        .demo{
+            display:none;
+        }
+    </style>
+    <body style="margin: 0%;padding:0%;box-sizing: border-box;">
+        <div style="padding:2%;background: #F6F8F9;">
+        <div style="box-shadow: 0px 0px 10px #00000029;background:#FFFFFF;padding:6%;border-radius:21px">
+            <div style="margin-left:30%;">
+                <div><div>
+                        <div>
+                            <div><div><p style="font-weight: bold; color:#595959;padding-bottom: 1%;width:60px; border-bottom: 2px solid #595959;" >
+                                    LOGIN</p></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div style="width:100%;padding-top:6%"><div style="color: #505050;font-size: 15px; font-family: roboto,regular;"><span>Email or Username</span></div>
+                        </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div  style="width:100%;padding-top:2%;"> <div><input type="text" name="Email"  size="45" style="border: 1px solid #D3D3D3;height:20px;border-radius:4px ;color:#000"></div></div>
+                            <div  class="demo" style="font-size: 15px;color:#BF574A;"><img onclick = "demo"  src="image/160.png"width="17px" height="15px" >This feild is required</div>
+                        </div>
+                    </div>
+                    <div>
+                            <div>
+                                <div  style="width:100%;padding-top:5%"><div style="color: #505050;font-size: 15px;"><span>Password</span></div>
+            
+                            </div>
+                            </div>
+                        </div>
+                        <div>
+                                <div>
+                                    <div>
+                                        <div  style="width:100%;padding-top:2%"><input type="text"  name="password"placeholder="*******"  size="45" style="height:20px;border: 1px solid #D3D3D3;border-radius:4px ;color:#000"></div></div>
+                                        <div  class="demo" style="font-size: 15px;color:#BF574A;"><img onclick = "demo"  src="image/160.png"width="17px" height="15px" >This feild is required</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <div  style="width:100%;padding-top:1%"><div style="color: #505050;font-size: 15px;float:left"><span><input type="checkbox">Remember me</span></div>
+                                    <div  onclick=" forgot()" style="float:right;border-bottom: 1px solid #707070;color: #707070;margin-right: 55%;">Forgot Password</div>
+                                    <div style="clear: both;"></div>
+                                </div>
+                                </div> 
+                                <div>
+                                    <div>
+                                        <div style="clear: both;padding-top: 5%;"><button onclick="myfunction()" id="btn" name="submit" style="border:#32BDD2;color:#FFFFFF ;width:100px;height: 35px;border-radius:21px;background: #32BDD2">LOGIN</button></div>
+                                    </div>
+                                    <script>
+                                        function myfunction(){
+                                            window.location.replace("veena_html_div_myRequest9.html")
+                                        }
+                                        function forgot()
+                                        {
+                                            window.location.replace("F:\GIT-FILES\Playground\HTML Task V0.3\Forgot Password\HTML\HTML using div\veena_HTML_div_forgotPassword.html");
+                                        }
+                                       
+                            
+                                       
+                                    </script>
+                                     
+                                </div></div>
+            </div>
+        </div>
+    </div>
+        
+             </body>
+        </html>
+

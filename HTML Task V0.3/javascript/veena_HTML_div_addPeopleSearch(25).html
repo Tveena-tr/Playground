@@ -26,7 +26,7 @@
                                                     font: Medium 20px/24px Roboto;margin-left:10px;
                                                     letter-spacing: 1px;
                                                     color: #5A5A5A;"><b>ADD PEOPLE</b></p></div>
-                                                <div style="float:right; margin-right:10px;margin-top:5px"><img src="../../images/request-icons-13.png"width="35px" ></div>
+                                                <div style="float:right; margin-right:10px;margin-top:5px"><img src="image/request-icons-13.png"width="35px" ></div>
                                                 <div style="clear:both;"></div>
                                             </div>
                                         </div></div></div>
@@ -36,7 +36,7 @@
                                                         <div style="width: 100%;">
                                                                 <div>
                                                                     <div>
-                                                                           <input type="text" placeholder="Peter Dinklage " name="search" style="border-radius: 25px; width: 300px;height: 34px;margin-left: 40px;margin-top: 40px;margin-bottom: 30px;margin-right: 40px;padding-left: 10px;"><span style="margin-left: -90px;padding-top: 10px;"><img src="../../images/request-icons-03.png" width="35px" height="20px"></span>
+                                                                           <input type="text" placeholder="Peter Dinklage " name="search" style="border-radius: 25px; width: 300px;height: 34px;margin-left: 40px;margin-top: 40px;margin-bottom: 30px;margin-right: 40px;padding-left: 10px;"><span style="margin-left: -90px;padding-top: 10px;" onclick="search()"><img src="image/request-icons-03.png" width="35px" height="20px"></span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -46,7 +46,7 @@
                                                     <div>
                                                         <div style="text-align: center;"> <div style="width: 100%;">
                                                         <div>
-                                                            <div style="align-content: center;"><img src="../../images/request-icons-04.png" width="50px" height="50px"></div>
+                                                            <div style="align-content: center;"><img src="image/request-icons-04.png" width="50px" height="50px"></div>
                                                         </div>
                                                     </div></div></div>
                                                 </div>
@@ -70,7 +70,7 @@
                                                                     font: Bold 12px/14px Roboto;
                                                                     letter-spacing: 1.2px;
                                                                     color: #5A5A5A;border-bottom:2px solid  #5A5A5A ;padding-top:2%"><p>CANCEL</p></div>
-                                                                    <div  style="margin-top:20px;float: right;"> <p><input type="text" name="text" placeholder="you haven't selected any person" style="border-radius:10%" ><span><button name="next" style="background: #32BDD2 0% 0% no-repeat padding-box;
+                                                                    <div  style="margin-top:20px;float: right;"> <p><input type="text" name="text" placeholder="you haven't selected any person" style="border-radius:10%" ><span onclick="done()"><button name="next" style="background: #32BDD2 0% 0% no-repeat padding-box;
                                                                         border-radius: 29px;text-align: center;font: Bold 12px/14px Roboto;letter-spacing: 1.2px;color: #FFFFFF;">DONE</button></span></p></div>
                                                                    
                                                                 </div>
@@ -79,5 +79,13 @@
                                         </div></div>
                                     </div>
                                 </div>
+                                <script>
+                                    function done(){
+                                        window.location.replace("veena_HTML_div_addPeopleFound(24).html")
+                                    }
+                                    function search(){
+                                        window.location.replace("veena_HTML_div_addPeople(26).html")
+                                    }
+                                </script>
                             </body>
                             </html>
