@@ -5,12 +5,13 @@
     </head>
     <style>
         .dot{
-            height: 10px;
-            width: 3px;
+            height: 1px;
+            width: 1px;
             margin-top: 4px;
             background-color: #D3D3D3;
             border-radius: 50%;
             display: inline-block;
+            border:1px dotted #000;
         }
         .line{
             transform: rotate(-90deg);
@@ -41,7 +42,15 @@
             
 
         }
-        #more {display: none;}
+        .text-overflow {
+           
+    width:100px;
+    height:50px;
+    display:block;
+    border:1px solid red;
+    padding:10px;
+    overflow:hidden;
+}
     </style>
     <body style="margin: 0%;padding:0%;box-sizing: border-box;" >
         <script>
@@ -153,14 +162,14 @@
                                    <div style="padding-left:30px;background: #FFFFFF 0% 0% no-repeat padding-box;padding-top:20px;
                                    border: 1px solid #F0F0F0;">
                                        <div style="float: left;width:35%;position: relative;">
-                                       <p style="text-align: left;
+                                       <p class= "text-overflow"style="text-align: left;
                                         font: Regular 12px/18px Roboto;
                                         letter-spacing: 0.78px;
-                                        color: #747474;">IBM ThinkServer TS150 Tower Server With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5"(3.3 GHz /Cache 8 MB) <br><span class="dot">...</span><span class="more">/ STD MEMORY 8GB X 1/ MAX. MEMORY 64GB 4 Slots/HARD DRIVE 1 X 1TB SATA 3.5" 7.2k SATA / STD. HDD BAY/ 3 bay MAX. HDD BAY upto 4 x 3.5" +1 x 2.5" bay/ OPTICAL Multi Burner/Integrated RAID 0,1,5,10 (RAID 121i).</span></p>
-                                           <div onclick="myfunction()"><p style="text-align: left;
+                                        color: #747474;">IBM ThinkServer TS150 Tower Server With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5"(3.3 GHz /Cache 8 MB)/ STD MEMORY 8GB X 1/ MAX. MEMORY 64GB 4 Slots/HARD DRIVE 1 X 1TB SATA 3.5" 7.2k SATA / STD. HDD BAY/ 3 bay MAX. HDD BAY upto 4 x 3.5" +1 x 2.5" bay/ OPTICAL Multi Burner/Integrated RAID 0,1,5,10 (RAID 121i).</p>
+                                           <a class="more" href="#" style="text-align: left;
                                            font: Bold 10px/18px Roboto;
                                            letter-spacing: 0.65px;
-                                           color: #747474;" id="mybtn" >READ MORE</p></div></div>
+                                           color: #747474;"  >READ MORE</a></div>
                                         <div style="float: left;width:10%;padding-left: 90px;padding-top: 30px;"><span style="text-align: center;
                                             font: Regular 12px/66px Roboto;
                                             letter-spacing: 0.6px;
@@ -340,6 +349,7 @@
                 popup.style.top = "90%";
                 popup.style.left = "0";
                 popup.style.zIndex = "1";
+                
 
 
             }
@@ -364,22 +374,9 @@
             function Click(url){
                 window.location = url;
             }
+            
            
-            function myFunction() {
-                var dots = document.getElementById("dot");
-                var moreText = document.getElementById("more");
-                var btnText = document.getElementById("myBtn");
-              
-                if (dots.style.display === "none") {
-                  dots.style.display = "inline";
-                  btnText.innerHTML = "Read more"; 
-                  moreText.style.display = "none";
-                } else {
-                  dots.style.display = "none";
-                  btnText.innerHTML = "Read less"; 
-                  moreText.style.display = "inline";
-                }
-              }  
+           
             </script>       
     </body>
 </html>

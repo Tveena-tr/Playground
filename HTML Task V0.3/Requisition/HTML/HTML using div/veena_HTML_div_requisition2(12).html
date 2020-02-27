@@ -34,6 +34,13 @@
             border-radius:50%;
             text-align:center;
         }
+        .textfont{
+            color:#707070;
+            border:#E0E0E0;
+            opacity: 1;
+            
+
+        }
     </style>
     <body style="margin: 0%;padding:0%;box-sizing: border-box;" >
         <script>
@@ -166,7 +173,23 @@
                                             font: Regular 12px/66px Roboto;
                                             letter-spacing: 0.6px;
                                             color: #707070;">Rs. 45, 000</p></div>
-                                        <div style="float: left;width:10%;padding-top: 20px;padding-left: 60px;"><img src="../../images/request-icons-11.png" width="40px" height="40px"></div>
+                                        <div style="float: left;width:10%;padding-top: 20px;padding-left: 60px;"><img onclick="popup()" src="../../images/request-icons-11.png" width="40px" height="40px">
+                                            <div id="myDIV" style= "display: none;width: 90%;">  <div style="background: #FFFFFF 0% 0% no-repeat padding-box;
+                                                box-shadow: 0px 0px 40px 0px #00000029;padding: 10%;"><div style="width:100% ;">
+                                                <div>
+                                                    <div class="textfont" style="font-size: large;padding-bottom: 10%;">
+                                                        <span>EDIT</span></div>
+                                                </div>
+                                                
+                                                <div>
+                                                    <div class="textfont" style="font-size: large;padding-bottom: 10%;">
+                                                        <span>DELETE</span></div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                            </div>
+                                        
                                         <div style="clear: both;"></div>
                                    </div>
                                </div>
@@ -303,7 +326,17 @@
                     </div>
                 </div></div>
                </div>
-           </div>           
+           </div> 
+           <script>
+            function popup() {
+              var x = document.getElementById("myDIV");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+            </script>          
     </body>
 </html>
            

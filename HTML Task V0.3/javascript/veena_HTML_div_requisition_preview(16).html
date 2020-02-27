@@ -368,7 +368,7 @@
                                           font: SemiBold 12px/13px Gibson;
                                           letter-spacing: 1.2px;
                                           color: #32BDD2;border-bottom:1px solid #32BDD2">BACK</span></div>
-                                         <div onclick="submit()" style="float: left;width: 10%;padding-top: 10%;padding-left: 5px;"><button name="submit" style="border:#32BDD2;color:#FFFFFF ;width:100px;height: 30px;border-radius:21px;background: #32BDD2">SUBMIT</button></div>
+                                         <div onclick="submit('veena_html_div_acknowledgement.html')" style="float: left;width: 10%;padding-top: 10%;padding-left: 5px;"><button name="submit" style="border:#32BDD2;color:#FFFFFF ;width:100px;height: 30px;border-radius:21px;background: #32BDD2">SUBMIT</button></div>
                                          <div style="clear: both;"></div>
                                      </div>
                                  </div>
@@ -383,8 +383,8 @@
             </div>
         </div>
         <script>
-            function submit(){
-                window.location.replace("veena_html_div_acknowledgement.html");
+            function submit(url){
+                window.location = url;
             }
             function back(){
                 window.location.replace("veena_HTML_div_requisitionApproval(15).html");

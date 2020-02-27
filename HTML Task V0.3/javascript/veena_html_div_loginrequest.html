@@ -48,24 +48,41 @@
                             <div>
                                 <div>
                                     <div  style="width:100%;padding-top:1%"><div style="color: #505050;font-size: 15px;float:left"><span><input type="checkbox">Remember me</span></div>
-                                    <div  onclick=" forgot()" style="float:right;border-bottom: 1px solid #707070;color: #707070;margin-right: 55%;">Forgot Password</div>
+                                    <div  onclick=" forgot()"  onclick=" forgot()" style="float:right;border-bottom: 1px solid #707070;color: #707070;margin-right: 55%;">Forgot Password</div>
                                     <div style="clear: both;"></div>
                                 </div>
                                 </div> 
                                 <div>
                                     <div>
-                                        <div style="clear: both;padding-top: 5%;"><button onclick="myfunction()" id="btn" name="submit" style="border:#32BDD2;color:#FFFFFF ;width:100px;height: 35px;border-radius:21px;background: #32BDD2">LOGIN</button></div>
+                                        <div style="clear: both;padding-top: 5%;"><button ondblclick="myfunction2('veena_html_div_myRequest9.html')" onclick="myfunction()" id="btn" name="submit" style="border:#32BDD2;color:#FFFFFF ;width:100px;height: 35px;border-radius:21px;background: #32BDD2">LOGIN</button></div>
                                     </div>
                                     <script>
-                                        function myfunction(){
-                                            window.location.replace("veena_html_div_myRequest9.html")
+                                         function myfunction(){
+                                            var button= document.getElementById("btn");
+                                            var hide = document.getElementsByClassName("demo");
+
+                                            for(var i=0;i!=hide.length;i++){
+                                               
+                                                if(button.click){
+                                                    hide[i].style.display="block";
+                                                }
+                                                else{
+                                                    hide[i].style.display="none";
+                                                }
+                                            }
+
+                                        }
+
+
+                                        function myfunction2(url){
+                                            window.location = url;
                                         }
                                         function forgot()
                                         {
-                                            window.location.replace("F:\GIT-FILES\Playground\HTML Task V0.3\Forgot Password\HTML\HTML using div\veena_HTML_div_forgotPassword.html");
+                                            window.location.replace("veena_HTML_div_forgotPassword.html");
                                         }
-                                       
-                            
+                                        
+                        
                                        
                                     </script>
                                      
