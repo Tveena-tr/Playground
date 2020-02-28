@@ -5,7 +5,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <style>
-        .demo{
+        .hidden{
             display:none;
         }
     </style>
@@ -28,7 +28,7 @@
                     <div>
                         <div>
                             <div  style="width:100%;padding-top:2%;"> <div><input type="text" name="Email"  size="45" style="border: 1px solid #D3D3D3;height:20px;border-radius:4px ;color:#000"></div></div>
-                            <div  class="demo" style="font-size: 15px;color:#BF574A;"><img onclick = "demo"  src="image/160.png"width="17px" height="15px" >This feild is required</div>
+                            <div   style="display: none;" class="hidden" ><img  src="image/160.png"width="17px" height="15px" ><span  style="font-size: 15px;color:#BF574A;">This feild is required</span></div>
                         </div>
                     </div>
                     <div>
@@ -42,54 +42,60 @@
                                 <div>
                                     <div>
                                         <div  style="width:100%;padding-top:2%"><input type="text"  name="password"placeholder="*******"  size="45" style="height:20px;border: 1px solid #D3D3D3;border-radius:4px ;color:#000"></div></div>
-                                        <div  class="demo" style="font-size: 15px;color:#BF574A;"><img onclick = "demo"  src="image/160.png"width="17px" height="15px" >This feild is required</div>
+                                        <div  id="demo"class="hidden" style= "display: none;"><img   src="image/160.png"width="17px" height="15px" ><span  style="font-size: 15px;color:#BF574A;">This feild is required</span></div>
                                 </div>
                             </div>
                             <div>
                                 <div>
                                     <div  style="width:100%;padding-top:1%"><div style="color: #505050;font-size: 15px;float:left"><span><input type="checkbox">Remember me</span></div>
-                                    <div  onclick=" forgot()"  onclick=" forgot()" style="float:right;border-bottom: 1px solid #707070;color: #707070;margin-right: 55%;">Forgot Password</div>
+                                    <div  onclick=" forgot('veena_HTML_div_Passworderror.html')" style="float:right;border-bottom: 1px solid #707070;color: #707070;margin-right: 55%;">Forgot Password</div>
                                     <div style="clear: both;"></div>
                                 </div>
                                 </div> 
                                 <div>
                                     <div>
-                                        <div style="clear: both;padding-top: 5%;"><button ondblclick="myfunction2('veena_html_div_myRequest9.html')" onclick="myfunction()" id="btn" name="submit" style="border:#32BDD2;color:#FFFFFF ;width:100px;height: 35px;border-radius:21px;background: #32BDD2">LOGIN</button></div>
+                                        <div style="clear: both;padding-top: 5%;"><button onclick="myfunction2('veena_html_div_myRequest9.html')"  id="btn" class="button" name="submit" style="border:#32BDD2;color:#FFFFFF ;width:100px;height: 35px;border-radius:21px;background: #32BDD2">LOGIN</button></div>
                                     </div>
-                                    <script>
-                                         function myfunction(){
-                                            var button= document.getElementById("btn");
-                                            var hide = document.getElementsByClassName("demo");
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <script>
+        function myfunction2(url){
+        if(document.getElementById("demo").style.display === "none" ){
+            errmessage();
+            }
+            else{
+                nextpage(url);
+                }
+                }
+            function nextpage(url)
+                {
+                    window.location = url;
+                }
+                function errmessage() {
+                    var x = document.getElementById("btn");
+                    var y = document.getElementsByClassName("hidden");
 
-                                            for(var i=0;i!=hide.length;i++){
-                                               
-                                                if(button.click){
-                                                    hide[i].style.display="block";
-                                                }
-                                                else{
-                                                    hide[i].style.display="none";
-                                                }
-                                            }
-
-                                        }
-
-
-                                        function myfunction2(url){
-                                            window.location = url;
-                                        }
-                                        function forgot()
-                                        {
-                                            window.location.replace("veena_HTML_div_forgotPassword.html");
-                                        }
-                                        
+                    for(var i=0; i!=y.length;i++){
                         
-                                       
-                                    </script>
-                                     
-                                </div></div>
-            </div>
-        </div>
-    </div>
+                        if (x.click) {
+                            y[i].style.display = "block";
+                            }
+                             else {
+                                 y[i].style.display = "none";
+                                 }
+                            }
+                        }
+                        function forgot(url)
+                        {
+                            window.location = url;
+                        }
+        
+
+       
+    </script>
         
              </body>
         </html>

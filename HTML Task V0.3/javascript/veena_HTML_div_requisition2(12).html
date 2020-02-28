@@ -42,21 +42,38 @@
             
 
         }
-        .text-overflow {
-           
-    width:500px;
-    height:100px;
-    display:block;
-   
-    padding:10px;
-    overflow:hidden;
+       
+        .more{
+            cursor: pointer;
+        }
+        .text-overflow p {
+  padding: 0;
+  margin: 0;
+ 
 }
+p {
+  font-size: 15px;
+  line-height: 20px;
+}
+.read-more {
+  background: none;
+  border: none;
+  color: #1199f9;
+  cursor: pointer;
+  font-size: 1em;
+  outline: none; 
+}
+.read-more:hover {
+  text-decoration: underline;
+}
+.read-more:focus {
+  outline: none;
+}
+
     </style>
     <body style="margin: 0%;padding:0%;box-sizing: border-box;" >
-        <script>
-            console.log("Page");
-        </script>
-           <div style="background: #F6F8F9 0% 0%;margin:20px;">
+        
+           <div id = "add" style="background: #F6F8F9 0% 0%;margin:20px;">
                <div>
                    <div>
                        <div >
@@ -337,7 +354,112 @@
                     </div>
                 </div></div>
                </div>
-           </div> 
+           </div>
+           
+           <div id="popup" style="width: 60%;display:none;background: #00000067 ;margin-left: 10%;margin-top: 5%;margin-right: 10%;margin-bottom: 5%;padding-left:20%;padding-top:8px;padding-bottom:40%;padding-right:20% ;position: relative;top: -10%;left:-10%;" >
+            <div style="width: 100%;">
+                <div>
+                    <div style=" padding: 4%; margin:5%">
+                        <div style="background: #FFFFFF 0% 0% ;
+                        box-shadow: 0px 3px 10px #00000029;
+                        border: 0.5px solid #E0E0E0;border-radius: 3%;">
+                        <div style="width: 100%;">
+                            <div>
+                                <div> <div  style="width: 100%;">
+                                        <div>
+                                            <div>
+                                                    <div style="background: #FCFCFC 0% 0% no-repeat padding-box;
+                                                    box-shadow: 0px 3px 6px #00000029;
+                                                    border-radius: 25px 25px 0px 0px;">
+                                                <div  style="width: 100%;">
+                                                    <div>
+                                                        <div style="float:left"><p style="text-align: left;
+                                                            font: Medium 20px/24px Roboto;margin-left:10px;
+                                                            letter-spacing: 1px;
+                                                            color: #5A5A5A;"><b>ADD ITEMS</b></p></div>
+                                                        <div onclick="btn()" style="float:right; margin-right:10px;margin-top:5px"><img src="image/request-icons-13.png"width="35px" ></div>
+                                                        <div style="clear:both;"></div>
+                                                    </div>
+                                                </div></div></div>
+                                            <div><div>
+                                                    <div>
+                                                        <div><p style="text-align: left;
+                                                            font: Regular 14px/16px Roboto;
+                                                            letter-spacing: 0.7px;
+                                                            color: #747474;;margin-left:10px">DESCRIPTION</p></div>
+                                                    </div>
+                                                </div>
+                                               </div>
+                                            <div> <div>
+                                                    <div>
+                                                        <div style="margin-left:10px"><input type="text" name="des"   style="border: 1px solid #D3D3D3;border-radius:4px ;height:70px ;width:50%;color:#D3D3D3"></div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            <div><div>
+                                                    <div>
+                                                        <div><p style="text-align: left;margin-left:10px;
+                                                            font: Regular 14px/16px Roboto;
+                                                            letter-spacing: 0.7px;
+                                                            color: #747474;padding-top:2%"> QTY</p></div>
+                                                    </div>
+                                                </div></div>
+                                            <div><div>
+                                                    <div>
+                                                        <div style="margin-left:10px"><input type="text" name="qty"   style="border: 1px solid #D3D3D3;border-radius:4px ;height:26px ;width:130px;"></div>
+                                                    </div>
+                                                </div></div>
+                                            <div><div>
+                                                    <div>
+                                                        <div><p  style="text-align: left;margin-left:10px;
+                                                            font: Regular 14px/16px Roboto;
+                                                            letter-spacing: 0.7px;
+                                                            color: #747474;padding-top: 7%; ">FULLFILLMENT DUE DATE</p></div>
+                                                    </div>
+                                                </div></div>
+                                            <div><div>
+                                                    <div>
+                                                        <div style="float:left;margin-left:10px ;"><input type="text" name="qty"   style="border: 1px solid #D3D3D3;border-radius:4px ;height:26px ;width:130px;"></div>
+                                                        <div style="float:left;margin-left:5px"><img src="image/request-icons-17.png"width="40px"></div>
+                                                        <div style="clear: both;"></div>
+                                                    </div>
+                                                </div>
+                                               </div>
+                                            <div>
+                                                 <div>
+                                                    <div>
+                                                        <div><p style="text-align: left;
+                                                            font: Regular 14px/16px Roboto;margin-left:10px;
+                                                            letter-spacing: 0.7px;
+                                                            color: #747474;padding-top: 3%; ">APPROXIMATE PRICE</p></div>
+                                                    </div>
+                                                </div></div>
+                                            <div style="padding-bottom:2%;">
+                                                <div>
+                                                    <div>
+                                                        <div style="margin-left:10px"><input type="text" name="price"   style="border: 1px solid #D3D3D3;border-radius:4px;height:26px ;width:130px ;color:#D3D3D3"></div>
+                                                    </div>
+                                                </div></div>
+                                            <div style="padding-top: 2%;">
+                                                 <div style="background: #FCFCFC 0% 0% no-repeat padding-box;
+                                                 box-shadow: 0px -3px 6px #00000029;
+                                                 border-radius: 0px 0px 37px 37px;
+                                                 opacity: 1;" >
+                                                    <div>
+                                                        <div onclick="btn()" style="float: left;"><p style="margin-left:10px;border-bottom: 1px solid #707070;color: #5A5A5A;width:58px">CANCEL</p></div>
+                                                        <div style="float: right;margin-right:10px;padding-top:2%"><button name="submit" style="border:#32BDD2;color:#FFFFFF ;width:100px;height: 30px;border-radius:21px;background: #32BDD2">DONE</button></div>
+                                                        <div style="clear: both;"></div>
+                                                    </div>
+                                                </div></div>
+                                        </div>
+                                    </div></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
            <script>
             function popup(l,k){
             var container = document.getElementById("l");
@@ -360,7 +482,7 @@
         }
             
                 function save(){
-                window.location.replace("veena_html_div_acknowledgement.html");
+                window.location.replace("veena_html_div_acknowledgement(20).html");
             }
             function next(){
                 window.location.replace("veena_HTML_div_requisition(18).html");
@@ -368,13 +490,47 @@
             function back(){
                 window.location.replace("veena_HTML_div_requisition(11).html");
             }
-            function btn(){
-                window.location.replace("additem_html.html") .style.background="#737373";
-            }
+            
             function Click(url){
                 window.location = url;
             }
-            
+            function btn(){
+            var p = document.getElementById("popup");
+            var q = document.getElementById("add");
+
+            if(p.style.display === "none"){
+                p.style.display = "block";
+                p.style.zIndex = "1";               
+                q.style.position = "relative";
+                p.style.position = "absolute";
+               
+            }
+            else {
+                p.style.display = "none";
+            }
+        }
+
+        document.getElementsByClassName("more").toggle(function(){
+            document.getElementsByClassName(this).text("read less").siblings("text-overflow").show();
+        }, function(){
+            document.getElementsByClassName(this).text("read more").siblings("text-overflow").hide();
+        });
+
+
+        function updateReadMore() {
+  if (allOSB.length > 0) {
+    for (var i = 0; i < allOSB.length; i++) {
+      if (allOSB[i].scrollHeight > mxh) {
+        if (allOSB[i].hasAttribute("style")) {
+          updateHeight(allOSB[i]);
+        }
+        allOSB[i].nextElementSibling.className = "read-more";
+      } else {
+        allOSB[i].nextElementSibling.className = "read-more hid";
+      }
+    }
+  }
+}            
            
            
             </script>       
