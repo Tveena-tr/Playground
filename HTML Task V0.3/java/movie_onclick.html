@@ -4,8 +4,10 @@
   
 <div id="parent">
   
+   
+    
   </div>
-  <button onclick = "myfunction()" style="margin-left: 20px;">NEXT</button>
+  
 
 
 
@@ -41,19 +43,29 @@ ajaxRequest.onreadystatechange = function() {
   cont.appendChild(app);
   app.appendChild(text);
   text.innerHTML = info[i].user;
-  text.style="font-size:20px ;padding-Left:11% ;margin-bottom:5px;padding-top:3% ";
+  text.style="font-size:20px ;padding-Left:11% ;margin-bottom:5px;padding-top:3%;";
 
   var text = document.createElement("div");  
   app.appendChild(text);
   text.innerHTML = info[i].tags;
   text.style = "font-size:20px ;padding-Left:11% ;margin-bottom:5px;";  
 
-  
-
- var text = document.createElement("div");
+  var text = document.createElement("div");
   cont.appendChild(text); 
-  text.style="clear:both "; 
+  text.style="float:left ";
 
+   
+
+  var button = document.createElement("div");
+  app.appendChild(button);
+  button.id ="Next(i)" ;
+  button.innerHTML="Next"
+  button.style = "float:left;;border-radius:10%;width:50px;height:5%;background:#EFEFEF;margin-left:40%";
+
+  var text = document.createElement("div");
+  cont.appendChild(text); 
+  text.style="clear:both ";
+  
    }
   }
 

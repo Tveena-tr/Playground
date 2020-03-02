@@ -4,6 +4,9 @@
         <title>Requisition2(12)</title>
     </head>
     <style>
+         #more {
+             display: none;
+             }
         .dot{
             height: 5px;
             width: 1px;
@@ -43,32 +46,6 @@
 
         }
        
-        .more{
-            cursor: pointer;
-        }
-        .text-overflow p {
-  padding: 0;
-  margin: 0;
- 
-}
-p {
-  font-size: 15px;
-  line-height: 20px;
-}
-.read-more {
-  background: none;
-  border: none;
-  color: #1199f9;
-  cursor: pointer;
-  font-size: 1em;
-  outline: none; 
-}
-.read-more:hover {
-  text-decoration: underline;
-}
-.read-more:focus {
-  outline: none;
-}
 
     </style>
     <body style="margin: 0%;padding:0%;box-sizing: border-box;" >
@@ -174,7 +151,7 @@ p {
                                        <div style="float: left;width:10%;padding-top: 20px;"><img src="image/request-icons-10.png" width="40px" height="40px"></div></div>
                                        <div style="clear: both;"></div>
                                    </div>
-                               </div>
+                               </div>                               
                                <div>
                                    <div style="padding-left:30px;background: #FFFFFF 0% 0% no-repeat padding-box;padding-top:20px;
                                    border: 1px solid #F0F0F0;">
@@ -182,8 +159,8 @@ p {
                                        <p class= "text-overflow"style="text-align: left;
                                         font: Regular 12px/18px Roboto;
                                         letter-spacing: 0.78px;
-                                        color: #747474;">IBM ThinkServer TS150 Tower Server With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5"(3.3 GHz /Cache 8 MB)/ STD MEMORY 8GB X 1/ MAX. MEMORY 64GB 4 Slots/HARD DRIVE 1 X 1TB SATA 3.5" 7.2k SATA / STD. HDD BAY/ 3 bay MAX. HDD BAY upto 4 x 3.5" +1 x 2.5" bay/ OPTICAL Multi Burner/Integrated RAID 0,1,5,10 (RAID 121i).</p>
-                                           <a class="more" href="#" style="text-align: left;
+                                        color: #747474;">IBM ThinkServer TS150 Tower Server With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5"(3.3 GHz /Cache 8 MB)<span id="dots"></span><span id="more"> / STD MEMORY 8GB X 1/ MAX. MEMORY 64GB 4 Slots/HARD DRIVE 1 X 1TB SATA 3.5" 7.2k SATA / STD. HDD BAY/ 3 bay MAX. HDD BAY upto 4 x 3.5" +1 x 2.5" bay/ OPTICAL Multi Burner/Integrated RAID 0,1,5,10 (RAID 121i).</p>
+                                           <a  onclick="myFunction()" id="myBtn"style="text-align: left;
                                            font: Bold 10px/18px Roboto;
                                            letter-spacing: 0.65px;
                                            color: #747474;"  >READ MORE</a></div>
@@ -227,11 +204,11 @@ p {
                                        <div style="float: left;width:35%;position: relative;"><p style="text-align: left;
                                         font: Regular 12px/18px Roboto;
                                         letter-spacing: 0.78px;
-                                        color: #747474;">Lenovo ThinkServer TS450 (PN:70M2001VIH) With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5”(3.3 GHz /Cache 8 MB)/ STD MEMORY 8GB X  </p>
-                                            <p style="text-align: left;
+                                        color: #747474;">Lenovo ThinkServer TS450 (PN:70M2001VIH) With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 <span id="dot"></span><span id="more1" style="display: none;">v5”(3.3 GHz /Cache 8 MB)/ STD MEMORY 8GB X 1 MAX. MEMORY 64GB; 4 DIMM Memory Slots/ HARD DRIVE Open Bay/ 2.5” SAS/SATA HS Bays (8 bay MAX. HDD BAY upto 8 x 2.5” bay MAX. HDD BAY upto 16x2.5”)/OPTICAL Multi Burner/ PCIe RAID 0,1,10 (RAID 520i). Supports SAS & SATA drives/Power Supply Standard (Inbuilt) 1 x 450W Power Supply /Max: 2</span></p>
+                                            <a  onclick="myFunction1()" id="myBtn1" style="text-align: left;
                                             font: Bold 10px/18px Roboto;
                                             letter-spacing: 0.65px;
-                                            color: #747474;">READ MORE</p></div>
+                                            color: #747474;">READ MORE</a></div>
                                         <div style="float: left;width:10%;padding-left: 90px;padding-top: 30px;"><span style="text-align: center;
                                             font: Regular 12px/66px Roboto;
                                             letter-spacing: 0.6px;
@@ -248,17 +225,18 @@ p {
                                         <div style="clear: both;"></div>
                                    </div>
                                </div>
+                             
                                <div>
                                    <div  style="padding-left:30px;background: #FFFFFF 0% 0% no-repeat padding-box;padding-top:20px;
                                    border: 1px solid #F0F0F0;">
                                        <div style="float: left;width:35%;position: relative;"><p style="text-align: left;
                                         font: Regular 12px/18px Roboto;
                                         letter-spacing: 0.78px;
-                                        color: #747474;">IBM X3300M4 Server With x3300M4/ Part NO:7382IA4/ Intel 
-                                           Xeon E5 1230v2 1.8 GHz,10 MB,1066MHz/ 1x 8GB RAM</p> <p style="text-align: left;
+                                        color: #747474;">IBM X3300M4 Server With x3300M4/ Part NO:7382IA4/ Intel Xeon E5 1230v2 1.8 GHz,10 MB,1066MHz/ 1x 8GB RAM<span id="dots1"></span><span id="more2"> 
+                                             / 1x500GB SATA HDD/ 3.5Simple-Swap/ MULTI BUTRNER</span></p> <a  onclick="myFunction2()" id="myBtn2" style="text-align: left;
                                            font: Bold 10px/18px Roboto;
                                            letter-spacing: 0.65px;
-                                           color: #747474;">READ MORE</p></div>
+                                           color: #747474;">READ MORE</a></div>
                                         <div style="float: left;width:10%;padding-left: 90px;padding-top: 30px;"><span style="text-align: center;
                                             font: Regular 12px/66px Roboto;
                                             letter-spacing: 0.6px;
@@ -307,10 +285,7 @@ p {
                                        <div style="float: left;width:35%;position: relative;"><p style="text-align: left;
                                         font: Regular 12px/18px Roboto;
                                         letter-spacing: 0.78px;
-                                        color: #747474;">daptec 128 MB Raid Controller Pair. Pci-e SAS/SATA</p> <p style="text-align: left;
-                                            font: Bold 10px/18px Roboto;
-                                            letter-spacing: 0.65px;
-                                            color: #747474;">READ MORE</p></div>
+                                        color: #747474;">daptec 128 MB Raid Controller Pair. Pci-e SAS/SATA</p> </div>
                                        <div style="float: left;width:10%;padding-left: 90px;padding-top: 30px;"><span style="text-align: center;
                                         font: Regular 12px/66px Roboto;
                                         letter-spacing: 0.6px;
@@ -510,27 +485,53 @@ p {
             }
         }
 
-        document.getElementsByClassName("more").toggle(function(){
-            document.getElementsByClassName(this).text("read less").siblings("text-overflow").show();
-        }, function(){
-            document.getElementsByClassName(this).text("read more").siblings("text-overflow").hide();
-        });
+        function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
 
-
-        function updateReadMore() {
-  if (allOSB.length > 0) {
-    for (var i = 0; i < allOSB.length; i++) {
-      if (allOSB[i].scrollHeight > mxh) {
-        if (allOSB[i].hasAttribute("style")) {
-          updateHeight(allOSB[i]);
-        }
-        allOSB[i].nextElementSibling.className = "read-more";
-      } else {
-        allOSB[i].nextElementSibling.className = "read-more hid";
-      }
-    }
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "READ MORE"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "READ LESS"; 
+    moreText.style.display = "inline";
   }
-}            
+}
+function myFunction1() {
+  var dots = document.getElementById("dot");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("myBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "READ MORE"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "READ LESS"; 
+    moreText.style.display = "inline";
+  }
+}
+function myFunction2() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "READ MORE"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "READ LESS"; 
+    moreText.style.display = "inline";
+  }
+}
+            
+             
            
            
             </script>       
