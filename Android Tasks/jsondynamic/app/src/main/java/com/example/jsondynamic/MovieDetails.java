@@ -45,3 +45,4 @@ public class MovieDetails {
         this.mComments = mComments;
     }
 }
+
